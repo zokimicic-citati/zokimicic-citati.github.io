@@ -4,7 +4,7 @@ const quotes = [
   'Gde ste mačkići',
   'Sve to ide po inerciji',
   'Vaš posao je deco sedeći',
-  'Buongiorno, como stai signore. Bene, molto bene'
+  'Buongiorno, come stai signore. Bene, molto bene'
 ];
 
 document.onreadystatechange = () => {
