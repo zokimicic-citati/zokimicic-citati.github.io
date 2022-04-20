@@ -1,7 +1,9 @@
 const quotes = [
   'Ako ti se prdi idi u wc pa se izduvaj',
   'Sve ti je to pričam ti priču',
-  'Gde ste mačkići'
+  'Gde ste mačkići',
+  'Sve to ide po inerciji',
+  'Vaš posao je deco sedeći'
 ];
 
 document.onreadystatechange = () => {
