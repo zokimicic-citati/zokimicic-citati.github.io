@@ -15,6 +15,12 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  height: 100%;
+  font-family: 'Roboto Light', sans-serif;
+}
+
+body {
+  height: 100%;
 }
 
 /*
@@ -261,11 +267,6 @@ textarea {
   }
 }
 
-html, body {
-  height: 100%;
-  font-family: 'Roboto Light', sans-serif;
-}
-
 #container {
   display: flex;
   justify-content: center;
@@ -273,6 +274,6 @@ html, body {
   height: 100%;
 }
 
-#container p {
+#quote {
   font-size: 4rem;
 }

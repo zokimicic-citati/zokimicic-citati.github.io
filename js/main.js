@@ -6,7 +6,7 @@ const quotes = [
 
 document.onreadystatechange = () => {
   if (document.readyState === 'interactive') {
-    const quoteElement = document.querySelector('#container p');
+    const quoteElement = document.querySelector('#quote');
     const randomNumber = Math.floor(Math.random() * quotes.length);
     quoteElement.innerHTML = quotes[randomNumber];
   }
