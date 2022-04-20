@@ -3,7 +3,8 @@ const quotes = [
   'Sve ti je to pričam ti priču',
   'Gde ste mačkići',
   'Sve to ide po inerciji',
-  'Vaš posao je deco sedeći'
+  'Vaš posao je deco sedeći',
+  'Buongiorno, como stai signore. Bene, molto bene'
 ];
 
 document.onreadystatechange = () => {
