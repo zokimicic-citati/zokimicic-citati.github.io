@@ -320,6 +320,10 @@ textarea {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(33, 37, 41)'/></svg>");
 }
 
+.form-switch .form-check-input:active {
+  background-color: transparent;
+}
+
 .form-switch .form-check-input:focus {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(33, 37, 41)'/></svg>");

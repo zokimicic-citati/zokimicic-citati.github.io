@@ -22,10 +22,12 @@ document.onreadystatechange = () => {
       const dataThemeAttribute = bodyElement.getAttribute('data-theme');
       if (dataThemeAttribute && dataThemeAttribute === 'dark') {
         bodyElement.removeAttribute('data-theme');
-        refreshButton.setAttribute('class', 'btn btn-outline-dark')
+        refreshButton.classList.remove('btn-outline-light');
+        refreshButton.classList.add('btn-outline-dark');
       } else {
         bodyElement.setAttribute('data-theme', 'dark');
-        refreshButton.setAttribute('class', 'btn btn-outline-light')
+        refreshButton.classList.remove('btn-outline-dark');
+        refreshButton.classList.add('btn-outline-light');
       }
     });
 
