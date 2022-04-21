@@ -16,7 +16,6 @@ html {
   font-size: 1em;
   line-height: 1.4;
   height: 100%;
-  font-family: 'Roboto Light', sans-serif;
 }
 
 body {
@@ -269,12 +268,24 @@ textarea {
 
 #container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  font-family: 'Roboto Light', sans-serif !important;
 }
 
 #quote {
   font-size: 4rem;
   text-align: center;
+}
+
+#refresh {
+  width: 80px;
+}
+
+#refresh-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

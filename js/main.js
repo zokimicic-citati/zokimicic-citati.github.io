@@ -10,8 +10,17 @@ const quotes = [
 
 document.onreadystatechange = () => {
   if (document.readyState === 'interactive') {
-    const quoteElement = document.querySelector('#quote');
-    const randomNumber = Math.floor(Math.random() * quotes.length);
-    quoteElement.innerHTML = quotes[randomNumber];
+    const refreshButton = document.querySelector('#refresh');
+    refreshButton.addEventListener('click', _event => {
+      setRandomQuote();
+    });
+
+    setRandomQuote();
   }
+}
+
+function setRandomQuote() {
+  const quoteElement = document.querySelector('#quote');
+  const randomNumber = Math.floor(Math.random() * quotes.length);
+  quoteElement.innerHTML = quotes[randomNumber];
 }
