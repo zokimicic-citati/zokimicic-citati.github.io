@@ -11,6 +11,16 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+:root {
+  --color-bg: #ffffff;
+  --color-text: rgb(33, 37, 41);
+}
+
+[data-theme="dark"] {
+  --color-bg: rgb(33, 37, 41);
+  --color-text: #ffffff;
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -20,6 +30,7 @@ html {
 
 body {
   height: 100%;
+  background-color: var(--color-bg);
 }
 
 /*
@@ -277,6 +288,7 @@ textarea {
 
 #quote {
   font-size: 4rem;
+  color: var(--color-text);
   text-align: center;
 }
 
@@ -292,4 +304,29 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#switcher {
+  align-self: end;
+}
+
+.form-switch .form-check-input {
+  height: 24px;
+  width: 48px;
+}
+
+.form-switch .form-check-input {
+  border-color: rgb(33, 37, 41);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(33, 37, 41)'/></svg>");
+}
+
+.form-switch .form-check-input:focus {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(33, 37, 41)'/></svg>");
+}
+
+.form-switch .form-check-input:checked {
+  border-color: #ffffff;
+  background-color: rgb(33, 37, 41);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255)'/></svg>");
 }

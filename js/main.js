@@ -10,9 +10,23 @@ const quotes = [
 
 document.onreadystatechange = () => {
   if (document.readyState === 'interactive') {
+    const bodyElement = document.querySelector('body');
+
     const refreshButton = document.querySelector('#refresh');
     refreshButton.addEventListener('click', _event => {
       setRandomQuote();
+    });
+
+    const switchButton = document.querySelector('#switcher');
+    switchButton.addEventListener('click', _event => {
+      const dataThemeAttribute = bodyElement.getAttribute('data-theme');
+      if (dataThemeAttribute && dataThemeAttribute === 'dark') {
+        bodyElement.removeAttribute('data-theme');
+        refreshButton.setAttribute('class', 'btn btn-outline-dark')
+      } else {
+        bodyElement.setAttribute('data-theme', 'dark');
+        refreshButton.setAttribute('class', 'btn btn-outline-light')
+      }
     });
 
     setRandomQuote();
