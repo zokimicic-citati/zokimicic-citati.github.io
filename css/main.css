@@ -284,6 +284,10 @@ textarea {
   width: 80px;
 }
 
+#refresh:focus {
+  box-shadow: none;
+}
+
 #refresh-icon {
   display: flex;
   justify-content: center;
