@@ -17,8 +17,8 @@ document.onreadystatechange = () => {
       setRandomQuote();
     });
 
-    const switchButton = document.querySelector('#switcher');
-    switchButton.addEventListener('click', _event => {
+    const switchInput = document.querySelector('#switcher input');
+    switchInput.addEventListener('click', _event => {
       const dataThemeAttribute = bodyElement.getAttribute('data-theme');
       if (dataThemeAttribute && dataThemeAttribute === 'dark') {
         bodyElement.removeAttribute('data-theme');
@@ -30,6 +30,19 @@ document.onreadystatechange = () => {
         refreshButton.classList.add('btn-outline-light');
       }
     });
+
+    const currentDate = new Date();
+    const currentDateAtEightPM = new Date(currentDate);
+    currentDateAtEightPM.setHours(20, 0, 0);
+    const currentDateAtEightAM = new Date(currentDate);
+    currentDateAtEightAM.setHours(8, 0, 0);
+
+    if (!(currentDate > currentDateAtEightAM && currentDate < currentDateAtEightPM)) {
+      switchInput.checked = true;
+      bodyElement.setAttribute('data-theme', 'dark');
+      refreshButton.classList.remove('btn-outline-dark');
+      refreshButton.classList.add('btn-outline-light');
+    }
 
     setRandomQuote();
   }
