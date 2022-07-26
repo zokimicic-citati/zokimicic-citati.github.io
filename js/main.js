@@ -8,7 +8,9 @@ const quotes = [
   'Pa ja vam pričam, a vi kako hoćete', 
   'Nama je slava kad vi dođete',
   'Da je dobro da se peče meso i kurjaci bi ga pekli', 
-  'Još godina 100 kako kaže pesma'
+  'Još godina 100 kako kaže pesma',
+  'POZDRAV IZ KNJAZEVCA',
+  'O.K.'
 ];
 
 document.onreadystatechange = () => {
