@@ -10,7 +10,8 @@ const quotes = [
   'Da je dobro da se peče meso i kurjaci bi ga pekli', 
   'Još godina 100 kako kaže pesma',
   'POZDRAV IZ KNJAZEVCA.',
-  'O. K.'
+  'O. K.',
+  'Ne mogu da procenim iz prve'
 ];
 
 document.onreadystatechange = () => {
