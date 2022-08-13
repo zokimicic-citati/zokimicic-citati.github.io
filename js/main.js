@@ -11,7 +11,8 @@ const quotes = [
   'Još godina 100 kako kaže pesma',
   'POZDRAV IZ KNJAZEVCA.',
   'O. K.',
-  'Ne mogu da procenim iz prve'
+  'Ne mogu da procenim iz prve',
+  'Da zapalimo po jednu'
 ];
 
 document.onreadystatechange = () => {
