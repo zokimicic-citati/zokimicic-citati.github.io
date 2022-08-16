@@ -12,7 +12,8 @@ const quotes = [
   'POZDRAV IZ KNJAZEVCA.',
   'O. K.',
   'Ne mogu da procenim iz prve',
-  'Da zapalimo po jednu'
+  'Da zapalimo po jednu',
+  'Ja generalno ne pijem kafu - popijem tako nekad espreso u kafiću i meni je to dovoljno'
 ];
 
 document.onreadystatechange = () => {
