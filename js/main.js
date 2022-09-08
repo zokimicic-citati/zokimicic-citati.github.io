@@ -13,7 +13,8 @@ const quotes = [
   'O. K.',
   'Ne mogu da procenim iz prve',
   'Da zapalimo po jednu',
-  'Popijem ponekad tako kratki espreso u kafiću i meni je to dovoljno'
+  'Popijem ponekad tako kratki espreso u kafiću i meni je to dovoljno',
+  'Oho hoho'
 ];
 
 document.onreadystatechange = () => {
