@@ -10,6 +10,8 @@ const quotes = [
   'Da je dobro da se peče meso i kurjaci bi ga pekli', 
   'Još godina 100 kako kaže pesma',
   'POZDRAV IZ KNJAZEVCA.',
+  'Evo ga trtoje'
+  'Nemoj da ga ljubiš'
   'O. K.',
   'Ne mogu da procenim iz prve',
   'Da zapalimo po jednu',
