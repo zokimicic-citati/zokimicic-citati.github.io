@@ -17,7 +17,8 @@ const quotes = [
   'Da zapalimo po jednu',
   'Popijem ponekad tako kratki espreso u kafiću i meni je to dovoljno',
   'Oho hoho',
-  'To nije politika, to je život'  
+  'To nije politika, to je život',
+  'Danas je SVETI ARHANGEL MIHAJLO, ARANDJELOVDAN!'
 ];
 
 document.onreadystatechange = () => {
